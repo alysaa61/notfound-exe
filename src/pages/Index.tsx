@@ -1,12 +1,41 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import ExistentialLoading from "./ExistentialLoading";
+import Menu from "./Menu";
+import LofiStudy from "./LofiStudy";
+import AdoptRock from "./AdoptRock";
+import ExistentialNotFound from "./ExistentialNotFound";
+import CursorJudge from "@/components/CursorJudge";
 
 const Index = () => {
+  const [page, setPage] = useState("loading");
+
+  const renderPage = () => {
+    switch (page) {
+      case "menu":
+        return <Menu setPage={setPage} />;
+      case "lofi":
+        return <LofiStudy onBack={() => setPage("menu")} />;
+      case "rock":
+        return <AdoptRock onBack={() => setPage("menu")} />;
+      case "404":
+        return <ExistentialNotFound onBack={() => setPage("menu")} />;
+      default:
+        return <ExistentialLoading setPage={setPage} />;
+    }
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="relative min-h-screen overflow-hidden">
+      <CursorJudge />
+      {renderPage()}
+      <footer className="fixed bottom-4 right-4 text-sm opacity-70">
+        <button 
+          onClick={() => setPage("404")} 
+          className="underline hover:opacity-100 transition-opacity font-mono"
+        >
+          404 That Gaslights You
+        </button>
+      </footer>
     </div>
   );
 };
