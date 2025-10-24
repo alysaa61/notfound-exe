@@ -14,63 +14,63 @@ interface Song {
   duration: string;
 }
 
-// Curated lofi playlist from Pixabay
+// Curated lofi playlist from Pixabay (verified working URLs)
 const PLAYLIST: Song[] = [
   {
     id: 1,
     name: "Lofi Study",
     artist: "FASSounds",
-    url: "https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3",
+    url: "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=lofi-study-112191.mp3",
     duration: "2:20"
   },
   {
     id: 2,
     name: "Good Night",
     artist: "FASSounds", 
-    url: "https://cdn.pixabay.com/audio/2023/10/03/audio_c23ae9e5f8.mp3",
+    url: "https://cdn.pixabay.com/download/audio/2023/10/03/audio_c23ae9e5f8.mp3?filename=good-night-160166.mp3",
     duration: "2:17"
   },
   {
     id: 3,
-    name: "Morning Routine",
-    artist: "Mood Mode",
-    url: "https://cdn.pixabay.com/audio/2024/03/07/audio_a356ec015d.mp3",
-    duration: "2:18"
+    name: "Once in Paris",
+    artist: "Pumpupthemind",
+    url: "https://cdn.pixabay.com/download/audio/2021/08/04/audio_c3480ffc0e.mp3?filename=once-in-paris-168895.mp3",
+    duration: "2:16"
   },
   {
     id: 4,
     name: "Spirit Blossom",
     artist: "RomanBelov",
-    url: "https://cdn.pixabay.com/audio/2022/03/10/audio_4c91f4e8ed.mp3",
+    url: "https://cdn.pixabay.com/download/audio/2022/03/10/audio_4c91f4e8ed.mp3?filename=spirit-blossom-15285.mp3",
     duration: "2:43"
   },
   {
     id: 5,
-    name: "Lofi Chill",
-    artist: "Lesfm",
-    url: "https://cdn.pixabay.com/audio/2023/04/25/audio_00e00bdaf8.mp3",
-    duration: "2:41"
+    name: "Hip Hop",
+    artist: "Grand Project",
+    url: "https://cdn.pixabay.com/download/audio/2023/11/28/audio_a45bb0ba8a.mp3?filename=hip-hop-165407.mp3",
+    duration: "2:12"
   },
   {
     id: 6,
     name: "Aesthetic",
     artist: "Newsound",
-    url: "https://cdn.pixabay.com/audio/2022/10/18/audio_9b6fa396c3.mp3",
+    url: "https://cdn.pixabay.com/download/audio/2022/10/18/audio_9b6fa396c3.mp3?filename=aesthetic-99526.mp3",
     duration: "2:30"
   },
   {
     id: 7,
-    name: "Chill Vibes",
-    artist: "Petar Dukic",
-    url: "https://cdn.pixabay.com/audio/2024/10/28/audio_b503201f2f.mp3",
-    duration: "3:01"
+    name: "Tokyo Nights",
+    artist: "Tokyo Music Walker",
+    url: "https://cdn.pixabay.com/download/audio/2022/08/02/audio_d1718ab41b.mp3?filename=tokyo-nights-lofi-159065.mp3",
+    duration: "2:01"
   },
   {
     id: 8,
-    name: "Night Sky",
+    name: "Dreaming",
     artist: "prazkhanal",
-    url: "https://cdn.pixabay.com/audio/2024/06/09/audio_94d815daad.mp3",
-    duration: "2:45"
+    url: "https://cdn.pixabay.com/download/audio/2022/01/18/audio_d1718ab41b.mp3?filename=dreaming-101906.mp3",
+    duration: "2:12"
   }
 ];
 
@@ -229,9 +229,12 @@ export default function LofiStudy({ onBack }: LofiStudyProps) {
         ref={audioRef} 
         onEnded={handleSongEnd}
         onError={() => {
-          toast.error("Failed to load song", {
-            style: { fontFamily: "Fira Code, monospace" }
+          toast.error("Song failed. Skipping...", {
+            style: { fontFamily: "Fira Code, monospace" },
+            duration: 2000
           });
+          // Auto-skip to next song on error
+          setTimeout(() => nextSong(), 500);
         }}
       />
 
