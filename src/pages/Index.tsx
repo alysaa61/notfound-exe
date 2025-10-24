@@ -33,7 +33,7 @@ const Index = () => {
           onClick={() => setPage("404")} 
           className="underline hover:opacity-100 transition-opacity font-mono"
         >
-          404 That Gaslights You
+          try not to click on this
         </button>
       </footer>
     </div>
