@@ -15,37 +15,37 @@ export default function Menu({ setPage }: MenuProps) {
       <div className="space-y-4 w-full max-w-md">
         <button
           onClick={() => setPage("lofi")}
-          className="w-full border-2 border-secondary px-6 py-4 rounded-lg hover:bg-secondary hover:text-background transition-all duration-200 font-mono font-semibold"
+          className="w-full border-2 border-secondary px-6 py-4 rounded-lg hover:bg-secondary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           🎧 Lo-Fi Study With Chaos
         </button>
         <button
           onClick={() => setPage("rock")}
-          className="w-full border-2 border-primary px-6 py-4 rounded-lg hover:bg-primary hover:text-background transition-all duration-200 font-mono font-semibold"
+          className="w-full border-2 border-primary px-6 py-4 rounded-lg hover:bg-primary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           🪨 Adopt a Rock
         </button>
         <button
           onClick={() => setPage("typing")}
-          className="w-full border-2 border-chaos-green px-6 py-4 rounded-lg hover:bg-chaos-green hover:text-background transition-all duration-200 font-mono font-semibold"
+          className="w-full border-2 border-chaos-green px-6 py-4 rounded-lg hover:bg-chaos-green hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           ⌨️ Existential Typing Test
         </button>
         <button
           onClick={() => setPage("memory")}
-          className="w-full border-2 border-chaos-pink px-6 py-4 rounded-lg hover:bg-chaos-pink hover:text-background transition-all duration-200 font-mono font-semibold"
+          className="w-full border-2 border-chaos-pink px-6 py-4 rounded-lg hover:bg-chaos-pink hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           🎨 Color Memory Chaos
         </button>
         <button
           onClick={() => setPage("void")}
-          className="w-full border-2 border-void px-6 py-4 rounded-lg hover:bg-void hover:text-foreground transition-all duration-200 font-mono font-semibold"
+          className="w-full border-2 border-void px-6 py-4 rounded-lg hover:bg-void hover:text-foreground transition-all duration-200 font-mono font-semibold hover-lift"
         >
           🌑 Pet the Void
         </button>
         <button
           onClick={() => setPage("about")}
-          className="w-full border-2 border-muted px-6 py-4 rounded-lg hover:bg-muted hover:text-background transition-all duration-200 font-mono font-semibold"
+          className="w-full border-2 border-muted px-6 py-4 rounded-lg hover:bg-muted hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           👤 About notfound.exe
         </button>
