@@ -25,6 +25,24 @@ export default function Menu({ setPage }: MenuProps) {
         >
           🪨 Adopt a Rock
         </button>
+        <button
+          onClick={() => setPage("typing")}
+          className="w-full border-2 border-chaos-green px-6 py-4 rounded-lg hover:bg-chaos-green hover:text-background transition-all duration-200 font-mono font-semibold"
+        >
+          ⌨️ Existential Typing Test
+        </button>
+        <button
+          onClick={() => setPage("memory")}
+          className="w-full border-2 border-chaos-pink px-6 py-4 rounded-lg hover:bg-chaos-pink hover:text-background transition-all duration-200 font-mono font-semibold"
+        >
+          🎨 Color Memory Chaos
+        </button>
+        <button
+          onClick={() => setPage("about")}
+          className="w-full border-2 border-muted px-6 py-4 rounded-lg hover:bg-muted hover:text-background transition-all duration-200 font-mono font-semibold"
+        >
+          👤 About notfound.exe
+        </button>
       </div>
 
       <p className="mt-12 text-xs opacity-50 italic font-mono">

@@ -5,6 +5,9 @@ import LofiStudy from "./LofiStudy";
 import AdoptRock from "./AdoptRock";
 import ExistentialNotFound from "./ExistentialNotFound";
 import CursorJudge from "@/components/CursorJudge";
+import AboutMe from "./AboutMe";
+import TypingTest from "./TypingTest";
+import ColorMemory from "./ColorMemory";
 
 const Index = () => {
   const [page, setPage] = useState("loading");
@@ -17,6 +20,12 @@ const Index = () => {
         return <LofiStudy onBack={() => setPage("menu")} />;
       case "rock":
         return <AdoptRock onBack={() => setPage("menu")} />;
+      case "typing":
+        return <TypingTest onBack={() => setPage("menu")} />;
+      case "memory":
+        return <ColorMemory onBack={() => setPage("menu")} />;
+      case "about":
+        return <AboutMe onBack={() => setPage("menu")} />;
       case "404":
         return <ExistentialNotFound onBack={() => setPage("menu")} />;
       default:
