@@ -38,6 +38,12 @@ export default function Menu({ setPage }: MenuProps) {
           🎨 Color Memory Chaos
         </button>
         <button
+          onClick={() => setPage("void")}
+          className="w-full border-2 border-void px-6 py-4 rounded-lg hover:bg-void hover:text-foreground transition-all duration-200 font-mono font-semibold"
+        >
+          🌑 Pet the Void
+        </button>
+        <button
           onClick={() => setPage("about")}
           className="w-full border-2 border-muted px-6 py-4 rounded-lg hover:bg-muted hover:text-background transition-all duration-200 font-mono font-semibold"
         >

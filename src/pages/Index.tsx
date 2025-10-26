@@ -8,6 +8,7 @@ import CursorJudge from "@/components/CursorJudge";
 import AboutMe from "./AboutMe";
 import TypingTest from "./TypingTest";
 import ColorMemory from "./ColorMemory";
+import PetTheVoid from "./PetTheVoid";
 
 const Index = () => {
   const [page, setPage] = useState("loading");
@@ -24,6 +25,8 @@ const Index = () => {
         return <TypingTest onBack={() => setPage("menu")} />;
       case "memory":
         return <ColorMemory onBack={() => setPage("menu")} />;
+      case "void":
+        return <PetTheVoid onBack={() => setPage("menu")} />;
       case "about":
         return <AboutMe onBack={() => setPage("menu")} />;
       case "404":

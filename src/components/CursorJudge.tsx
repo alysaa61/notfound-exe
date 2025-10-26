@@ -82,6 +82,7 @@ export default function CursorJudge() {
           left: `${position.x}px`,
           top: `${position.y}px`,
           transform: 'translate(-50%, -50%)',
+          transition: 'left 0.1s ease-out, top 0.1s ease-out',
         }}
       />
       <div className="fixed bottom-4 left-4 text-xs opacity-70 font-mono space-y-1">

@@ -6,13 +6,13 @@ interface TypingTestProps {
 }
 
 const quotes = [
-  "The void stares back, and it types faster than you.",
-  "Existence precedes essence, but does it precede typos?",
-  "To type or not to type, that is the existential question.",
-  "In the end, we are all just characters on a screen.",
-  "The only thing we have to fear is fear itself... and typos.",
-  "Life is what happens while you're busy making typos.",
-  "I think, therefore I am... probably making a mistake.",
+  "The void stares back, and it types faster than you ever could. In the darkness of your screen, every keystroke echoes into eternity, a reminder that nothing you type truly matters, yet here you are, typing anyway.",
+  "Existence precedes essence, but does it precede typos? We are defined by our mistakes, our backspaces, our corrections. Each error is a small death, each fix a tiny resurrection in the digital realm.",
+  "To type or not to type, that is the existential question. Whether it is nobler in the mind to suffer the slings and arrows of autocorrect, or to take arms against a sea of typos and by opposing, end them.",
+  "In the end, we are all just characters on a screen, temporary pixels in an endless digital void. Our words float in the ether, destined to be lost in the infinite scroll of time.",
+  "The only thing we have to fear is fear itself, and typos, and that moment when you hit send before proofreading, and the crushing realization that you will never type perfectly.",
+  "Life is what happens while you are busy making typos and checking your keyboard for errors. Every misplaced letter is a moment lost, yet somehow we persist in this futile dance with our keyboards.",
+  "I think, therefore I am, probably making a mistake right now. My consciousness is defined by errors, my being validated by backspaces, my existence proven by the delete key.",
 ];
 
 export default function TypingTest({ onBack }: TypingTestProps) {
