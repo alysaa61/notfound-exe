@@ -12,6 +12,8 @@ import PetTheVoid from "./PetTheVoid";
 import WhackAThought from "./WhackAThought";
 import PointlessClicker from "./PointlessClicker";
 import ChaosFortune from "./ChaosFortune";
+import InfiniteElevator from "./InfiniteElevator";
+import SelfTicTacToe from "./SelfTicTacToe";
 
 const Index = () => {
   const [page, setPage] = useState("loading");
@@ -36,6 +38,10 @@ const Index = () => {
         return <PointlessClicker onBack={() => setPage("menu")} />;
       case "fortune":
         return <ChaosFortune onBack={() => setPage("menu")} />;
+      case "elevator":
+        return <InfiniteElevator onBack={() => setPage("menu")} />;
+      case "tictactoe":
+        return <SelfTicTacToe onBack={() => setPage("menu")} />;
       case "about":
         return <AboutMe onBack={() => setPage("menu")} />;
       case "404":

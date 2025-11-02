@@ -5,6 +5,30 @@ All notable changes to the notfound.exe project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2025-11-02
+
+### Added
+- **Infinite Elevator** - New waiting simulation game
+  - Elevator that never reaches its destination
+  - Random floor displays and existential thoughts
+  - Time and button press tracking
+  - Achievement system for persistence
+- **Existential Tic-Tac-Toe** - Play against yourself
+  - Full tic-tac-toe gameplay with both players controlled by user
+  - Win/loss/draw tracking for both X and O
+  - Existential commentary on self-competition
+  - Game statistics persistence
+
+### Changed
+- **Pointless Clicker** - Expanded upgrade system from 3 to 8 upgrades
+  - Added: Nihilism Engine, Chaos Multiplier, Reality Distorter, Quantum Paradox, Cosmic Absurdity
+  - Increased progression depth with higher-tier automation
+- **Chaos Fortune Teller** - Expanded fortune database from 20 to 110+ fortunes
+  - More variety in philosophical and absurdist messages
+  - Enhanced replay value
+- Updated main menu to include two new games
+- Updated README with new game descriptions and features
+
 ## [1.2.0] - 2025-11-02
 
 ### Added

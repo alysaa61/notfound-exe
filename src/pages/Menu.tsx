@@ -62,6 +62,18 @@ export default function Menu({ setPage }: MenuProps) {
           🔮 Chaos Fortune Teller
         </button>
         <button
+          onClick={() => setPage("elevator")}
+          className="w-full border-2 border-chaos-green px-6 py-4 rounded-lg hover:bg-chaos-green hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+        >
+          🛗 Infinite Elevator
+        </button>
+        <button
+          onClick={() => setPage("tictactoe")}
+          className="w-full border-2 border-chaos-pink px-6 py-4 rounded-lg hover:bg-chaos-pink hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+        >
+          ❌⭕ Existential Tic-Tac-Toe
+        </button>
+        <button
           onClick={() => setPage("about")}
           className="w-full border-2 border-muted px-6 py-4 rounded-lg hover:bg-muted hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >

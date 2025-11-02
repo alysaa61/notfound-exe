@@ -10,8 +10,10 @@ A collection of existential mini-games and quirky digital experiences. Because s
 - **Typing Test** - Measure your WPM with philosophical paragraphs
 - **Lofi Study Mode** - Chill beats to exist to
 - **Whack-a-Thought** - Stop intrusive thoughts before they consume you (spoiler: they will)
-- **Pointless Clicker** - Earn meaningless points through meaningless clicks
-- **Chaos Fortune Teller** - Receive fortunes to questions you didn't ask
+- **Pointless Clicker** - Earn meaningless points with 8 tiers of upgrades
+- **Chaos Fortune Teller** - Receive 110+ fortunes to questions you didn't ask
+- **Infinite Elevator** - Wait for an elevator that will never arrive
+- **Existential Tic-Tac-Toe** - Play against yourself and contemplate duality
 - **Existential Loading** - Even loading screens question their purpose
 - **Custom Cursor Judge** - Your cursor has opinions about your choices
 
@@ -43,9 +45,11 @@ A collection of existential mini-games and quirky digital experiences. Because s
 │   │   ├── ChaosFortune.tsx
 │   │   ├── ColorMemory.tsx
 │   │   ├── ExistentialLoading.tsx
+│   │   ├── InfiniteElevator.tsx
 │   │   ├── LofiStudy.tsx
 │   │   ├── PetTheVoid.tsx
 │   │   ├── PointlessClicker.tsx
+│   │   ├── SelfTicTacToe.tsx
 │   │   ├── TypingTest.tsx
 │   │   ├── WhackAThought.tsx
 │   │   └── NotFound.tsx

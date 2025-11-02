@@ -17,13 +17,18 @@ const UPGRADES = [
   { name: "Auto-Clicker", cost: 20, perSecond: 1 },
   { name: "Existential Dread", cost: 100, perSecond: 5 },
   { name: "Void Generator", cost: 500, perSecond: 25 },
+  { name: "Nihilism Engine", cost: 2000, perSecond: 100 },
+  { name: "Chaos Multiplier", cost: 10000, perSecond: 500 },
+  { name: "Reality Distorter", cost: 50000, perSecond: 2500 },
+  { name: "Quantum Paradox", cost: 250000, perSecond: 12500 },
+  { name: "Cosmic Absurdity", cost: 1000000, perSecond: 50000 },
 ];
 
 export default function PointlessClicker({ onBack }: PointlessClickerProps) {
   const [points, setPoints] = useState(0);
   const [totalClicks, setTotalClicks] = useState(0);
   const [message, setMessage] = useState("Click the button. No reason why.");
-  const [upgrades, setUpgrades] = useState<number[]>([0, 0, 0]);
+  const [upgrades, setUpgrades] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0]);
   const [buttonScale, setButtonScale] = useState(1);
 
   useEffect(() => {
@@ -32,7 +37,7 @@ export default function PointlessClicker({ onBack }: PointlessClickerProps) {
       const data = JSON.parse(saved);
       setPoints(data.points || 0);
       setTotalClicks(data.totalClicks || 0);
-      setUpgrades(data.upgrades || [0, 0, 0]);
+      setUpgrades(data.upgrades || [0, 0, 0, 0, 0, 0, 0, 0]);
     }
   }, []);
 
