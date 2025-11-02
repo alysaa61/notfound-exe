@@ -44,6 +44,24 @@ export default function Menu({ setPage }: MenuProps) {
           🌑 Pet the Void
         </button>
         <button
+          onClick={() => setPage("whack")}
+          className="w-full border-2 border-accent px-6 py-4 rounded-lg hover:bg-accent hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+        >
+          💭 Whack-a-Thought
+        </button>
+        <button
+          onClick={() => setPage("clicker")}
+          className="w-full border-2 border-primary px-6 py-4 rounded-lg hover:bg-primary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+        >
+          👆 Pointless Clicker
+        </button>
+        <button
+          onClick={() => setPage("fortune")}
+          className="w-full border-2 border-secondary px-6 py-4 rounded-lg hover:bg-secondary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+        >
+          🔮 Chaos Fortune Teller
+        </button>
+        <button
           onClick={() => setPage("about")}
           className="w-full border-2 border-muted px-6 py-4 rounded-lg hover:bg-muted hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >

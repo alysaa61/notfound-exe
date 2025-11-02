@@ -9,6 +9,9 @@ import AboutMe from "./AboutMe";
 import TypingTest from "./TypingTest";
 import ColorMemory from "./ColorMemory";
 import PetTheVoid from "./PetTheVoid";
+import WhackAThought from "./WhackAThought";
+import PointlessClicker from "./PointlessClicker";
+import ChaosFortune from "./ChaosFortune";
 
 const Index = () => {
   const [page, setPage] = useState("loading");
@@ -27,6 +30,12 @@ const Index = () => {
         return <ColorMemory onBack={() => setPage("menu")} />;
       case "void":
         return <PetTheVoid onBack={() => setPage("menu")} />;
+      case "whack":
+        return <WhackAThought onBack={() => setPage("menu")} />;
+      case "clicker":
+        return <PointlessClicker onBack={() => setPage("menu")} />;
+      case "fortune":
+        return <ChaosFortune onBack={() => setPage("menu")} />;
       case "about":
         return <AboutMe onBack={() => setPage("menu")} />;
       case "404":

@@ -9,6 +9,9 @@ A collection of existential mini-games and quirky digital experiences. Because s
 - **Color Memory Game** - Test your memory while the universe watches
 - **Typing Test** - Measure your WPM with philosophical paragraphs
 - **Lofi Study Mode** - Chill beats to exist to
+- **Whack-a-Thought** - Stop intrusive thoughts before they consume you (spoiler: they will)
+- **Pointless Clicker** - Earn meaningless points through meaningless clicks
+- **Chaos Fortune Teller** - Receive fortunes to questions you didn't ask
 - **Existential Loading** - Even loading screens question their purpose
 - **Custom Cursor Judge** - Your cursor has opinions about your choices
 
@@ -37,11 +40,14 @@ A collection of existential mini-games and quirky digital experiences. Because s
 │   │   ├── Menu.tsx    # Navigation menu
 │   │   ├── AboutMe.tsx
 │   │   ├── AdoptRock.tsx
+│   │   ├── ChaosFortune.tsx
 │   │   ├── ColorMemory.tsx
 │   │   ├── ExistentialLoading.tsx
 │   │   ├── LofiStudy.tsx
 │   │   ├── PetTheVoid.tsx
+│   │   ├── PointlessClicker.tsx
 │   │   ├── TypingTest.tsx
+│   │   ├── WhackAThought.tsx
 │   │   └── NotFound.tsx
 │   ├── hooks/          # Custom React hooks
 │   ├── lib/            # Utility functions
