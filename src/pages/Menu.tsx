@@ -15,61 +15,61 @@ export default function Menu({ setPage }: MenuProps) {
       <div className="space-y-4 w-full max-w-md">
         <button
           onClick={() => setPage("lofi")}
-          className="w-full border-2 border-chaos-green px-6 py-4 rounded-lg hover:bg-chaos-green hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+          className="w-full border-2 border-secondary px-6 py-4 rounded-lg hover:bg-secondary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           🎧 Lo-Fi Study With Chaos
         </button>
         <button
           onClick={() => setPage("rock")}
-          className="w-full border-2 border-chaos-pink px-6 py-4 rounded-lg hover:bg-chaos-pink hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+          className="w-full border-2 border-primary px-6 py-4 rounded-lg hover:bg-primary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           🪨 Adopt a Rock
         </button>
         <button
           onClick={() => setPage("typing")}
-          className="w-full border-2 border-chaos-green px-6 py-4 rounded-lg hover:bg-chaos-green hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+          className="w-full border-2 border-secondary px-6 py-4 rounded-lg hover:bg-secondary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           ⌨️ Existential Typing Test
         </button>
         <button
           onClick={() => setPage("memory")}
-          className="w-full border-2 border-chaos-pink px-6 py-4 rounded-lg hover:bg-chaos-pink hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+          className="w-full border-2 border-primary px-6 py-4 rounded-lg hover:bg-primary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           🎨 Color Memory Chaos
         </button>
         <button
           onClick={() => setPage("void")}
-          className="w-full border-2 border-chaos-green px-6 py-4 rounded-lg hover:bg-chaos-green hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+          className="w-full border-2 border-secondary px-6 py-4 rounded-lg hover:bg-secondary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           🌑 Pet the Void
         </button>
         <button
           onClick={() => setPage("whack")}
-          className="w-full border-2 border-chaos-pink px-6 py-4 rounded-lg hover:bg-chaos-pink hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+          className="w-full border-2 border-primary px-6 py-4 rounded-lg hover:bg-primary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           💭 Whack-a-Thought
         </button>
         <button
           onClick={() => setPage("clicker")}
-          className="w-full border-2 border-chaos-green px-6 py-4 rounded-lg hover:bg-chaos-green hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+          className="w-full border-2 border-secondary px-6 py-4 rounded-lg hover:bg-secondary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           👆 Pointless Clicker
         </button>
         <button
           onClick={() => setPage("fortune")}
-          className="w-full border-2 border-chaos-pink px-6 py-4 rounded-lg hover:bg-chaos-pink hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+          className="w-full border-2 border-primary px-6 py-4 rounded-lg hover:bg-primary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           🔮 Chaos Fortune Teller
         </button>
         <button
           onClick={() => setPage("elevator")}
-          className="w-full border-2 border-chaos-green px-6 py-4 rounded-lg hover:bg-chaos-green hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+          className="w-full border-2 border-secondary px-6 py-4 rounded-lg hover:bg-secondary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           🛗 Infinite Elevator
         </button>
         <button
           onClick={() => setPage("tictactoe")}
-          className="w-full border-2 border-chaos-pink px-6 py-4 rounded-lg hover:bg-chaos-pink hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
+          className="w-full border-2 border-primary px-6 py-4 rounded-lg hover:bg-primary hover:text-background transition-all duration-200 font-mono font-semibold hover-lift"
         >
           ❌⭕ Existential Tic-Tac-Toe
         </button>
