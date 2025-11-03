@@ -5,10 +5,10 @@ interface MenuProps {
 export default function Menu({ setPage }: MenuProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-center space-y-6 px-4">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4 existential-pulse">
+      <h1 className="text-4xl md:text-5xl font-bold mb-4 existential-pulse" style={{ userSelect: "none" }}>
         Welcome to notfound.exe
       </h1>
-      <p className="italic opacity-70 mb-8 font-mono">
+      <p className="italic opacity-70 mb-8 font-mono" style={{ userSelect: "none" }}>
         Choose your brand of chaos wisely.
       </p>
 
@@ -81,7 +81,7 @@ export default function Menu({ setPage }: MenuProps) {
         </button>
       </div>
 
-      <p className="mt-12 text-xs opacity-50 italic font-mono">
+      <p className="mt-12 text-xs opacity-50 italic font-mono" style={{ userSelect: "none" }}>
         (There is no right choice. Only interesting ones.)
       </p>
     </div>

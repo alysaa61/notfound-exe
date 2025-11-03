@@ -18,7 +18,6 @@ export default function CursorJudge() {
       setIsIdle(false);
       
       // Add trail effect
-      setTrail(prev => [...prev.slice(-8), { x: e.clientX, y: e.clientY, id: Date.now() }]);
       
       const now = Date.now();
       const diff = now - lastTime;
@@ -73,6 +72,7 @@ export default function CursorJudge() {
             top: `${point.y}px`,
             opacity: (i + 1) / trail.length * 0.3,
             transform: 'translate(-50%, -50%)',
+            userSelect: "none",
           }}
         />
       ))}
@@ -83,11 +83,13 @@ export default function CursorJudge() {
           top: `${position.y}px`,
           transform: 'translate(-50%, -50%)',
           transition: 'left 0.08s ease-out, top 0.08s ease-out',
+          userSelect: "none",
         }}
+        
       />
       <div className="fixed bottom-4 left-4 text-xs opacity-70 font-mono space-y-1">
-        <div>{message}</div>
-        {clicks > 0 && <div className="text-chaos-pink">clicks: {clicks}</div>}
+        <div style={{ userSelect: "none" }}>{message}</div>
+        {clicks > 0 && <div className="text-chaos-pink" style={{ userSelect: "none" }}>clicks: {clicks}</div>}
       </div>
     </>
   );
