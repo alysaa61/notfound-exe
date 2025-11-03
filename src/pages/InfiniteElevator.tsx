@@ -105,10 +105,10 @@ export default function InfiniteElevator({ onBack }: InfiniteElevatorProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4">
       <div className="text-center mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold mb-2 existential-pulse">
+        <h1 className="text-4xl md:text-5xl font-bold mb-2 existential-pulse" style={{ userSelect: "none" }}>
           Infinite Elevator
         </h1>
-        <p className="text-sm opacity-70 font-mono italic">
+        <p className="text-sm opacity-70 font-mono italic" style={{ userSelect: "none" }}>
           Your floor is coming. Eventually. Maybe.
         </p>
       </div>
@@ -116,11 +116,12 @@ export default function InfiniteElevator({ onBack }: InfiniteElevatorProps) {
       <div className="mb-8 w-full max-w-md">
         <div className="border-4 border-primary rounded-lg p-8 bg-background/50">
           <div className="text-center mb-6">
-            <div className="text-8xl mb-4">🏢</div>
+            <div className="text-8xl mb-4" style={{ userSelect: "none" }}>🏢</div>
             <div
               className={`text-3xl font-mono font-bold mb-2 ${
                 isMoving ? "animate-pulse" : ""
               }`}
+              style={{ userSelect: "none" }}
             >
               {floor}
             </div>
@@ -149,20 +150,20 @@ export default function InfiniteElevator({ onBack }: InfiniteElevatorProps) {
 
       {thought && (
         <div className="max-w-md mb-6 p-4 border border-muted rounded-lg bg-background/30 animate-fade-in">
-          <p className="text-sm font-mono italic text-center opacity-70">
+          <p className="text-sm font-mono italic text-center opacity-70" style={{ userSelect: "none" }}>
             {thought}
           </p>
         </div>
       )}
 
       <div className="text-center mb-6 space-y-1">
-        <div className="text-xs opacity-50 font-mono">
+        <div className="text-xs opacity-50 font-mono" style={{ userSelect: "none" }}>
           Time Waited: {formatTime(waitTime)}
         </div>
-        <div className="text-xs opacity-50 font-mono">
+        <div className="text-xs opacity-50 font-mono" style={{ userSelect: "none" }}>
           Button Presses: {pressCount}
         </div>
-        <div className="text-xs opacity-30 font-mono italic mt-2">
+        <div className="text-xs opacity-30 font-mono italic mt-2" style={{ userSelect: "none" }}>
           {pressCount > 50 && "Achievement: Eternal Optimist"}
         </div>
       </div>

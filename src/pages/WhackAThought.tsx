@@ -88,26 +88,26 @@ export default function WhackAThought({ onBack }: WhackAThoughtProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4">
       <div className="text-center mb-6">
-        <h1 className="text-4xl md:text-5xl font-bold mb-2 existential-pulse">
+        <h1 className="text-4xl md:text-5xl font-bold mb-2 existential-pulse" style={{ userSelect: "none" }}>
           Whack-a-Thought
         </h1>
-        <p className="text-sm opacity-70 font-mono italic">
+        <p className="text-sm opacity-70 font-mono italic" style={{ userSelect: "none" }}>
           Stop those intrusive thoughts before they consume you.
         </p>
       </div>
 
       <div className="flex gap-8 mb-6 font-mono">
         <div className="text-center">
-          <div className="text-2xl font-bold">{score}</div>
-          <div className="text-xs opacity-70">Score</div>
+          <div className="text-2xl font-bold" style={{ userSelect: "none" }}>{score}</div>
+          <div className="text-xs opacity-70" style={{ userSelect: "none" }}>Score</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl font-bold">{highScore}</div>
-          <div className="text-xs opacity-70">Best</div>
+          <div className="text-2xl font-bold" style={{ userSelect: "none" }}>{highScore}</div>
+          <div className="text-xs opacity-70" style={{ userSelect: "none" }}>Best</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl font-bold">{timeLeft}s</div>
-          <div className="text-xs opacity-70">Time</div>
+          <div className="text-2xl font-bold" style={{ userSelect: "none" }}>{timeLeft}s</div>
+          <div className="text-xs opacity-70" style={{ userSelect: "none" }}>Time</div>
         </div>
       </div>
 

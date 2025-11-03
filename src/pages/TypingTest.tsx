@@ -74,8 +74,8 @@ export default function TypingTest({ onBack }: TypingTestProps) {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 py-8">
-      <h1 className="text-3xl md:text-4xl mb-2 font-bold">⌨️ Existential Typing Test</h1>
-      <p className="mb-8 opacity-70 font-mono text-sm">type fast or the void will judge you</p>
+      <h1 className="text-3xl md:text-4xl mb-2 font-bold" style={{ userSelect: "none" }}>⌨️ Existential Typing Test</h1>
+      <p className="mb-8 opacity-70 font-mono text-sm" style={{ userSelect: "none" }}>type fast or the void will judge you</p>
 
       <div className="w-full max-w-2xl mb-8 p-6 border-2 border-primary rounded-lg bg-card">
         <div className="text-2xl font-mono mb-6 leading-relaxed">
@@ -99,12 +99,12 @@ export default function TypingTest({ onBack }: TypingTestProps) {
 
       <div className="flex gap-8 mb-8 font-mono">
         <div className="text-center">
-          <div className="text-3xl font-bold text-chaos-green">{wpm}</div>
-          <div className="text-xs opacity-70">WPM</div>
+          <div className="text-3xl font-bold text-chaos-green" style={{ userSelect: "none" }}>{wpm}</div>
+          <div className="text-xs opacity-70" style={{ userSelect: "none" }}>WPM</div>
         </div>
         <div className="text-center">
-          <div className="text-3xl font-bold text-chaos-pink">{accuracy}%</div>
-          <div className="text-xs opacity-70">Accuracy</div>
+          <div className="text-3xl font-bold text-chaos-pink" style={{ userSelect: "none" }}>{accuracy}%</div>
+          <div className="text-xs opacity-70" style={{ userSelect: "none" }}>Accuracy</div>
         </div>
       </div>
 

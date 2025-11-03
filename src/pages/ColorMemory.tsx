@@ -94,13 +94,13 @@ export default function ColorMemory({ onBack }: ColorMemoryProps) {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 py-8">
-      <h1 className="text-3xl md:text-4xl mb-2 font-bold">🎨 Color Memory Chaos</h1>
-      <p className="mb-8 opacity-70 font-mono text-sm">remember the sequence or face the void</p>
+      <h1 className="text-3xl md:text-4xl mb-2 font-bold" style={{ userSelect: "none" }}>🎨 Color Memory Chaos</h1>
+      <p className="mb-8 opacity-70 font-mono text-sm" style={{ userSelect: "none" }}>remember the sequence or face the void</p>
 
       <div className="mb-8 font-mono text-center">
-        <div className="text-2xl font-bold text-chaos-green mb-2">Score: {score}</div>
+        <div className="text-2xl font-bold text-chaos-green mb-2" style={{ userSelect: "none" }}>Score: {score}</div>
         {highScore > 0 && (
-          <div className="text-sm opacity-70">High Score: {highScore}</div>
+          <div className="text-sm opacity-70" style={{ userSelect: "none" }}>High Score: {highScore}</div>
         )}
       </div>
 
@@ -128,7 +128,7 @@ export default function ColorMemory({ onBack }: ColorMemoryProps) {
           start game
         </button>
       ) : (
-        <div className="mb-4 font-mono text-sm opacity-70">
+        <div className="mb-4 font-mono text-sm opacity-70" style={{ userSelect: "none" }}>
           {isPlaying ? "Watch carefully..." : "Your turn!"}
         </div>
       )}

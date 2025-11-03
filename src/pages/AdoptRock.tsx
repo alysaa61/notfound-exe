@@ -75,8 +75,8 @@ export default function AdoptRock({ onBack }: AdoptRockProps) {
     <div className="flex flex-col items-center justify-center min-h-screen text-center px-4">
       {!adopted ? (
         <>
-          <div className="text-8xl mb-8">🪨</div>
-          <h1 className="text-3xl md:text-4xl mb-6 font-bold">Adopt a Digital Rock</h1>
+          <div className="text-8xl mb-8" style={{ userSelect: "none" }}>🪨</div>
+          <h1 className="text-3xl md:text-4xl mb-6 font-bold" style={{ userSelect: "none" }}>Adopt a Digital Rock</h1>
           <input
             type="text"
             placeholder="name your rock..."
@@ -95,19 +95,19 @@ export default function AdoptRock({ onBack }: AdoptRockProps) {
         </>
       ) : (
         <>
-          <div className="text-8xl mb-4">{rockMood === "💀" ? "💀" : "🪨"}</div>
-          <div className="text-3xl mb-6">{rockMood}</div>
-          <h2 className="text-2xl md:text-3xl mb-4 font-bold">
+          <div className="text-8xl mb-4" style={{ userSelect: "none" }}>{rockMood === "💀" ? "💀" : "🪨"}</div>
+          <div className="text-3xl mb-6" style={{ userSelect: "none" }}>{rockMood}</div>
+          <h2 className="text-2xl md:text-3xl mb-4 font-bold" style={{ userSelect: "none" }}>
             <span className="text-primary">{rockName}</span>
           </h2>
           
           <div className="max-w-md w-full mb-6 space-y-3 font-mono text-sm">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center" style={{ userSelect: "none" }}>
               <span>Age:</span>
               <span className="text-chaos-green">{age}s</span>
             </div>
             <div className="space-y-1">
-              <div className="flex justify-between">
+              <div className="flex justify-between" style={{ userSelect: "none" }}>
                 <span>Hunger:</span>
                 <span className={hunger < 30 ? "text-destructive" : "text-chaos-green"}>{hunger}%</span>
               </div>
@@ -119,7 +119,7 @@ export default function AdoptRock({ onBack }: AdoptRockProps) {
               </div>
             </div>
             <div className="space-y-1">
-              <div className="flex justify-between">
+              <div className="flex justify-between" style={{ userSelect: "none" }}>
                 <span>Boredom:</span>
                 <span className={boredom > 70 ? "text-destructive" : "text-chaos-pink"}>{boredom}%</span>
               </div>

@@ -96,19 +96,19 @@ export default function PointlessClicker({ onBack }: PointlessClickerProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4">
       <div className="text-center mb-6">
-        <h1 className="text-4xl md:text-5xl font-bold mb-2 existential-pulse">
+        <h1 className="text-4xl md:text-5xl font-bold mb-2 existential-pulse" style={{ userSelect: "none" }}>
           Pointless Clicker
         </h1>
-        <p className="text-sm opacity-70 font-mono italic max-w-md">
+        <p className="text-sm opacity-70 font-mono italic max-w-md" style={{ userSelect: "none" }}>
           {message}
         </p>
       </div>
 
       <div className="mb-8 text-center">
-        <div className="text-6xl font-bold mb-2">{points}</div>
-        <div className="text-sm opacity-70 font-mono">Meaningless Points</div>
+        <div className="text-6xl font-bold mb-2" style={{ userSelect: "none" }}>{points}</div>
+        <div className="text-sm opacity-70 font-mono" style={{ userSelect: "none" }}>Meaningless Points</div>
         {perSecond > 0 && (
-          <div className="text-xs opacity-50 font-mono mt-1">
+          <div className="text-xs opacity-50 font-mono mt-1" style={{ userSelect: "none" }}>
             +{perSecond}/sec
           </div>
         )}
@@ -123,7 +123,7 @@ export default function PointlessClicker({ onBack }: PointlessClickerProps) {
       </button>
 
       <div className="w-full max-w-md space-y-3 mb-6">
-        <h3 className="text-xl font-bold font-mono mb-4">Upgrades</h3>
+        <h3 className="text-xl font-bold font-mono mb-4" style={{ userSelect: "none" }}>Upgrades</h3>
         {UPGRADES.map((upgrade, idx) => (
           <button
             key={idx}
@@ -143,7 +143,7 @@ export default function PointlessClicker({ onBack }: PointlessClickerProps) {
         ))}
       </div>
 
-      <div className="text-xs opacity-50 font-mono mb-6">
+      <div className="text-xs opacity-50 font-mono mb-6" style={{ userSelect: "none" }}>
         Total Clicks: {totalClicks}
       </div>
 

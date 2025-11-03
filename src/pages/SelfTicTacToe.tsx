@@ -165,16 +165,16 @@ export default function SelfTicTacToe({ onBack }: SelfTicTacToeProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4">
       <div className="text-center mb-6">
-        <h1 className="text-4xl md:text-5xl font-bold mb-2 existential-pulse">
+        <h1 className="text-4xl md:text-5xl font-bold mb-2 existential-pulse" style={{ userSelect: "none" }}>
           Existential Tic-Tac-Toe
         </h1>
-        <p className="text-sm opacity-70 font-mono italic max-w-md">
+        <p className="text-sm opacity-70 font-mono italic max-w-md" style={{ userSelect: "none" }}>
           Play against yourself. Question your decisions.
         </p>
       </div>
 
       <div className="mb-6 text-center">
-        <div className="text-2xl font-mono font-bold mb-2">
+        <div className="text-2xl font-mono font-bold mb-2" style={{ userSelect: "none" }}>
           Current Turn:{" "}
           <span
             className={
@@ -185,7 +185,7 @@ export default function SelfTicTacToe({ onBack }: SelfTicTacToeProps) {
           </span>
         </div>
         {winner && (
-          <div className="text-xl font-mono font-bold text-accent animate-scale-in">
+          <div className="text-xl font-mono font-bold text-accent animate-scale-in" style={{ userSelect: "none" }}>
             {winner === "draw" ? "DRAW!" : `${winner} WINS!`}
           </div>
         )}
@@ -216,7 +216,7 @@ export default function SelfTicTacToe({ onBack }: SelfTicTacToeProps) {
 
       {comment && (
         <div className="max-w-md mb-6 p-4 border border-muted rounded-lg bg-background/30 animate-fade-in">
-          <p className="text-sm font-mono italic text-center opacity-70">
+          <p className="text-sm font-mono italic text-center opacity-70" style={{ userSelect: "none" }}>
             {comment}
           </p>
         </div>
@@ -224,10 +224,10 @@ export default function SelfTicTacToe({ onBack }: SelfTicTacToeProps) {
 
       <div className="mb-6 p-4 border border-muted rounded-lg bg-background/20">
         <div className="text-xs font-mono space-y-1 text-center">
-          <div className="opacity-70">Games Played: {gamesPlayed}</div>
-          <div className="text-primary">X Wins: {xWins}</div>
-          <div className="text-secondary">O Wins: {oWins}</div>
-          <div className="opacity-50">Draws: {draws}</div>
+          <div className="opacity-70" style={{ userSelect: "none" }}>Games Played: {gamesPlayed}</div>
+          <div className="text-primary" style={{ userSelect: "none" }}>X Wins: {xWins}</div>
+          <div className="text-secondary" style={{ userSelect: "none" }}>O Wins: {oWins}</div>
+          <div className="opacity-50" style={{ userSelect: "none" }}>Draws: {draws}</div>
         </div>
       </div>
 

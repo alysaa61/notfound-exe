@@ -176,10 +176,10 @@ export default function ChaosFortune({ onBack }: ChaosFortuneProps) {
       ))}
 
       <div className="text-center mb-8 z-10">
-        <h1 className="text-4xl md:text-5xl font-bold mb-2 existential-pulse">
+        <h1 className="text-4xl md:text-5xl font-bold mb-2 existential-pulse" style={{ userSelect: "none" }}>
           Chaos Fortune Teller
         </h1>
-        <p className="text-sm opacity-70 font-mono italic">
+        <p className="text-sm opacity-70 font-mono italic" style={{ userSelect: "none" }}>
           Seek answers to questions you didn't ask.
         </p>
       </div>
@@ -189,6 +189,7 @@ export default function ChaosFortune({ onBack }: ChaosFortuneProps) {
           className={`text-8xl transition-transform duration-500 ${
             isRevealing ? "animate-spin" : ""
           }`}
+          style={{ userSelect: "none" }}
         >
           🔮
         </div>
@@ -201,13 +202,13 @@ export default function ChaosFortune({ onBack }: ChaosFortuneProps) {
 
       {fortune && !isRevealing && (
         <div className="max-w-md mb-8 p-6 border-2 border-primary rounded-lg bg-background/50 animate-scale-in">
-          <p className="text-lg font-mono text-center italic">"{fortune}"</p>
+          <p className="text-lg font-mono text-center italic" style={{ userSelect: "none" }}>"{fortune}"</p>
         </div>
       )}
 
       {isRevealing && (
         <div className="mb-8 h-24 flex items-center">
-          <p className="text-lg font-mono opacity-70 animate-pulse">
+          <p className="text-lg font-mono opacity-70 animate-pulse" style={{ userSelect: "none" }}>
             Consulting the chaos...
           </p>
         </div>
@@ -221,7 +222,7 @@ export default function ChaosFortune({ onBack }: ChaosFortuneProps) {
         {fortune ? "Another Fortune" : "Reveal My Fortune"}
       </button>
 
-      <div className="text-xs opacity-50 font-mono mb-6">
+      <div className="text-xs opacity-50 font-mono mb-6" style={{ userSelect: "none" }}>
         Fortunes Received: {fortuneCount}
       </div>
 

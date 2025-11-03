@@ -238,14 +238,14 @@ export default function LofiStudy({ onBack }: LofiStudyProps) {
         }}
       />
 
-      <h1 className="text-3xl md:text-4xl mb-2 font-bold">Lo-Fi Study With Chaos 🎧</h1>
-      <p className="mb-6 opacity-70 font-mono text-sm">chill beats... with occasional existential terror</p>
+      <h1 className="text-3xl md:text-4xl mb-2 font-bold" style={{ userSelect: "none" }}>Lo-Fi Study With Chaos 🎧</h1>
+      <p className="mb-6 opacity-70 font-mono text-sm" style={{ userSelect: "none" }}>chill beats... with occasional existential terror</p>
       
       {/* Now Playing */}
       <div className="mb-6 p-6 border-2 border-primary rounded-lg max-w-md w-full bg-card">
-        <div className="text-xs opacity-50 mb-2 font-mono">NOW PLAYING</div>
-        <div className="text-xl font-bold mb-1">{currentSong.name}</div>
-        <div className="text-sm opacity-70 mb-4">{currentSong.artist}</div>
+        <div className="text-xs opacity-50 mb-2 font-mono" style={{ userSelect: "none" }}>NOW PLAYING</div>
+        <div className="text-xl font-bold mb-1" style={{ userSelect: "none" }}>{currentSong.name}</div>
+        <div className="text-sm opacity-70 mb-4" style={{ userSelect: "none" }}>{currentSong.artist}</div>
         
         {playing && (
           <div className="text-2xl font-mono text-chaos-pink animate-pulse mb-4">
@@ -302,10 +302,10 @@ export default function LofiStudy({ onBack }: LofiStudyProps) {
       {/* Study Timer */}
       {studyTime > 0 && (
         <div className="mb-6 font-mono">
-          <div className="text-xl text-chaos-green">
+          <div className="text-xl text-chaos-green" style={{ userSelect: "none" }}>
             Study Time: {formatTime(studyTime)} {vibeCheck}
           </div>
-          <div className="text-xs opacity-50 mt-1">
+          <div className="text-xs opacity-50 mt-1" style={{ userSelect: "none" }}>
             {studyTime > 600 ? "you're actually studying?! impressive." : "the void watches..."}
           </div>
         </div>
